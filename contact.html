@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us Page</title>
+   
+    <style>
+        /* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+/* Styling the login container */
+.login-container {
+    background: rgb(213, 222, 253);
+    padding: 2rem;
+    margin-left: -10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    height: 435px;
+    margin-top: 60px;;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #666;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* adds padding and border to the element's total width and height */
+}
+
+button {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4a54e1;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.signup:hover{
+    color: rgba(255, 16, 16, 0.7);
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <marquee scrollamount="15"><h3 style="text-align:right">For any information, query or suggestion, please fill the form below. We will certainly look forward to your opinions!</h3></marquee>
+        <img class="image" src="13900045_5353146.jpg" style="width: 1000px; height: 500px;">
+    </div>
+    <div class="login-container">
+        <form action="/submit-your-feedback-form" method="POST">
+            <h2>Contact Us</h2>
+            <div class="input-group">
+                <label for="Name">Name: </label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Email: </label>
+                <input type="text" id="email" name="email" required>
+            </div>
+            
+            <div class="input-group">
+                <label for="Message">Message: </label>
+                <textarea rows="5" cols="40"></textarea>
+            </div>
+            <button type="submit">Submit</button>
+            
+        </form>
+    </div>
+</body>
+</html>

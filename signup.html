@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="sign up.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up</title>
+</head>
+<style>
+body{
+    background-image: url("joshua-hoehne-FFn2-TW8pxk-unsplash.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: 5%;
+    margin-bottom: 5%;
+   
+
+
+}
+
+#section{
+    background-color: rgba(255, 233, 189, 0.355);
+    border-radius: 10px;
+    
+    margin-left: 25%;
+    margin-right: 25%;
+    box-shadow: 0px 7px 20px rgba(0,0,0,0.3);
+    
+    background-position-y: top;
+}
+
+.signup{
+    text-align: center;
+    text-shadow: 10px;
+    font-size: 30px;
+    padding-top: 20px;
+}
+
+.text{
+    text-align: justify;
+    padding-left: 35%;
+    font-weight: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.input{
+    text-align: justify;
+    margin-left: 35%;
+    border: none;
+    border-bottom: 2px solid black;
+    border-radius: 5px;
+}
+
+#signup1{
+    display: block;
+    margin: 30px 300px;
+    padding: 2px;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    transition: 0.5s;
+    
+}
+
+#signup1:hover{
+    background-color:rgb(11, 65, 83);
+    box-shadow: 0 5px 7px rgba(0,0,0,0.5);
+    color: white;
+    border-radius: 20px;
+    border-color: rgb(255, 255, 255);
+
+}
+input{
+    width: 210px;
+    padding: 3px 10px 3px 10px
+}
+
+p.login{
+    text-align: center;
+    padding-bottom: 20px;
+}
+a:hover{
+    color: red;
+}
+</style>
+
+<body>
+    <form action="backend.php">
+    <section id="section">
+        <h2 class="signup"><u>SignUp</u> To join the fight against <i>Food Wastage</i></h2>
+        <p class="text">Name</p>
+        <input class="input" type="text" placeholder="Full Name">
+        <p class="text">Email</p>
+        <input class="input" type="email" placeholder="ex: qwerty16@gmail.com">
+        <p class="text">Phone</p>
+        <input class="input" type="text" placeholder="ex: 9990008888">
+        <p class="text">User Name</p>
+        <input class="input" type="text" placeholder="ex: ron@16">
+        <p class="text">Password</p>
+        <input class="input" type="text" placeholder="ex: 123_#savefood"><br><br>
+        <input type="submit" id="signup1">
+        <p class="login"> Alreay have an account? <a href="signin.html">login</a></p>
+
+    </section>
+    </form>
+</body>
+
+</html>
